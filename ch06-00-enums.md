@@ -1,0 +1,3 @@
+# Numaralandırmalar ve Desen Eşleştirme (Enums and Pattern Matching)
+
+Bu bölümde numaralandırmalara bakacağız ki bunlara ayrıca _enumler_ denir. Enumler, olası varyantlarını numaralandırarak bir tip tanımlamanızı sağlar. İlk olarak bir enum tanımlayıp kullanacağız ki bir enum'in veriyle birlikte anlamı nasıl kodladığını gösterelim. Sonra, `Option` adında özellikle kullanışlı bir enum'i keşfedeceğiz ki bir değerin bir şey veya hiçbir şey olabileceğini ifade eder. Sonra, `match` ifadesinde desen eşleştirmenin (pattern matching) bir enum'in farklı değerleri için farklı kod çalıştırmayı nasıl kolaylaştırdığına bakacağız. Son olarak, `if let` yapısının kodunuzda enumleri işlemek için kullanılabilen başka uygun ve kısa bir deyim olduğunu kapsamlıyacağız.

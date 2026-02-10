@@ -1,0 +1,7 @@
+# Hata Ele Alma (Error Handling)
+
+Hataların bir yaşam gerçeği olduğu için, Rust bir şeyin yanlış gittiği durumlarda ele almak için çok sayıda özellik sahiptir. Çoklu durumlarda, Rust kodunuzu derlemeden önce bir hata olma olasılığını tanımanızı ve bazı bir eylem almanızı gerektirir. Bu gereklilik, kodunuzu üretime dağıtmadan önce hataları keşfetmenizi ve onları uygun şekilde ele almanızı sağlayarak programınızı daha dayanıklı kılar!
+
+Rust hataları iki büyük kategoriye ayırır: kurtarılabilir (recoverable) ve kurtarılamaz (unrecoverable) hatalar. _Kurtarılabilir bir hata_ için, örneğin _dosya bulunamadı_ hatası, en muhtemel sorunu kullanıcıya raporlamak ve operasyonu yeniden denemek istiyoruz. _Kurtarılamaz hatalar_ hataların simptomlarıdır, örneğin bir dizinin sonunun ötesindeki bir yerde erişmeyi denemek ve bu yüzden programı hemen durdurmak istiyoruz.
+
+Çoğu dil bu iki hata türünü ayırmaz ve her ikisini aynı şekilde ele alır, istisnalar gibi mekanizmalar kullanarak. Rust'ın istisnaları yoktur. Bunun yerine, kurtarılabilir hatalar için `Result<T, E>` tipi ve program bir kurtarılamaz hata karşılaştığında yürütümeyi durduran `panic!` makrosu vardır. Bu bölüm önce `panic!`'i çağrmayı kaplar ve sonra `Result<T, E>` değerlerini dönmeyi konuşur. Ek olarak, bir hatadan kurtarmeyi denemek için mi yoksa yürütümeyi durdurmak için mi karar verirken göz önüne alınacakları keşfedeceğiz.

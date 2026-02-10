@@ -1,0 +1,11 @@
+# Otomatik Test Yazma (Writing Automated Tests)
+
+1972 tarihli "Alçakgönüllü Programcı" (The Humble Programmer) makalesinde, Edsger W. Dijkstra şunları söyledi: "Program test etmek hataların varlığını göstermek için çok etkili bir yol olabilir, ancak yokluklarını göstermek için umutsuzca yetersizdir." Bu, mümkün olduğu kadar test etmeye çalışmaman gerektiği anlamına gelmez!
+
+Programlarımızdaki _doğruluk_ (correctness), kodumuzun istediğimizi ne kadar iyi yaptığı ölçüsüdür. Rust, programların doğruluğu hakkında yüksek bir endişe ile tasarlanmıştır, ancak doğruluk karmaşıktır ve kanıtlamak kolay değildir. Rust'ın tip sistemi bu yükün büyük bir bölümünü üstlenir, ancak tip sistemi her şeyi yakalayamaz. Bu nedenle, Rust otomatik yazılım testleri yazma desteği içerir.
+
+`add_two` adında, geçirilen herhangi bir sayıya 2 ekleyen bir fonksiyon yazdığımızı söyleyin. Bu fonksiyonun imzası bir tamsayıyı parametre olarak kabul eder ve bir tamsayıyı sonuç olarak döndürür. Bu fonksiyonu uygulayıp derlediğimizde, Rust, örneğin bu fonksiyona bir `String` değeri veya geçersiz bir referans geçirmediğimizden emin olmak için öğrendiğiniz tüm tip kontrolü ve ödünç kontrolü yapar. Ancak Rust bu fonksiyonun tam olarak istediğimizi yapacağını, yani parametrenin 10 eklenmesi veya 50 çıkarılması yerine, parametre artı 2'yi döndüreceğini kontrol edemez! İşte testler buraya devreye girer.
+
+Örneğin, `3`'ü `add_two` fonksiyonuna geçtiğimizde dönen değerin `5` olduğunu iddia eden testler yazabiliriz. Mevcut doğru davranışın değişmediğinden emin olmak için kodumuzu değiştirdiğimizde bu testleri çalıştırabiliriz.
+
+Test etmek karmaşık bir beceridir: İyi testlerin nasıl yazılacağı hakkında her detayı tek bir bölümde kapsayamayacak olmamıza rağmen, bu bölümde Rust'ın test tesislerinin mekaniklerini tartışacağız. Testlerinizi yazarken kullanabileceğiniz notlar ve makrolar, testlerinizi çalıştırmak için sağlanan varsayılan davranış ve seçenekler ve testleri birim testleri ve entegrasyon testleri olarak nasıl organize edeceğiniz hakkında konuşacağız.

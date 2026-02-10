@@ -1,0 +1,5 @@
+# Yapıları (Structs) İlgili Veriyi Yapılandırmak İçin Kullanma
+
+Bir _yapı_ (struct), veya _yapı_, anlamına gelen bir grup oluşturan birden fazla ilgili değeri paketlemek ve adlandırmak için izin veren özel bir veri tipidir. Nesne yönelimli bir dil ile tanışdıysanız, bir yapı, bir nesnenin veri özniteliklerine benzer. Bu bölümde, ne zaten bildiğinize dayanarak yapılar ile tipleleri karşılaştıracağız ve yapıların veriyi gruplamanın daha iyi bir yol olduğunu ne zaman göstereceğiz.
+
+Yapıları nasıl tanımlayacağınızı ve örneklendireceğinizi göstereceğiz. Bir yapı tipiyle ilişkili davranışları belirtmek için, özellikle _yöntemler_ (methods) adında ilişkili fonksiyon türünü nasıl tanımlayacağınızı konuşacağız. Yapılar ve numaralandırmalar (Bölüm 6'da konuşulacak), Rust'ın derleme zamanı tip kontrolünden tam olarak yararlanmak için programınızın alanında yeni tipler oluşturmak için yapı taşlarıdır.

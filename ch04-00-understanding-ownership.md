@@ -1,0 +1,3 @@
+# Sahipliği Anlamak
+
+Sahiplik (Ownership) Rust'ın en özgün özelliğidir ve dilin geri kalanı için derin etkileri vardır. Rust'ın bir çöp toplayıcıya (garbage collector) ihtiyaç duymadan bellek güvenliği garantileri vermesini sağlar, bu yüzden sahipliğin nasıl çalıştığını anlamak önemlidir. Bu bölümde, sahiplikten ve birkaç ilgili özellikten konuşacağız: ödünç alma, dilimler ve Rust'ın veriyi bellekte nasıl düzenlediği.
