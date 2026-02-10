@@ -1,6 +1,6 @@
 # Rust Programlama Kitabı - Türkçe Çeviri
 
-## 📚 Kitabın HTML Sürümünü İndirin
+## 📚 Kitabın HTML Sürümünü İndirin (https://doc.rust-lang.org/book/)
 
 Kitabın oluşturulmuş HTML sürümünü doğrudan indirmek için repository'de bulunan **`RustProgrammingBookAsHtml.7z`** dosyasını indirebilirsiniz. Bu dosyayı indirdikten sonra çıkararak tarayıcınızda kitabı görüntüleyebilirsiniz.
 
@@ -13,6 +13,7 @@ Bu repository, [Rust Programlama Kitabı](https://github.com/rust-lang/book)'nı
 Bu çeviri, resmi Rust Programming Language kitabının şu sürümüne dayanmaktadır:
 - Orijinal Repository: https://github.com/rust-lang/book
 - Kaynak Dizin: https://github.com/rust-lang/book/tree/main/src
+- Çeviriye Konu Olan Kitabın İngilizce Sürümü: https://doc.rust-lang.org/book/
 
 ## İçerik
 
